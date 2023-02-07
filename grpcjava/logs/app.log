@@ -1,0 +1,442 @@
+551  [main] DEBUG i.g.n.s.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+564  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+564  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - Java version: 11
+568  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+569  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+570  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+573  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+575  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+576  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @491666ad
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:334)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+576  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+577  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+609  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - maxDirectMemory: 1533018112 bytes (maybe)
+609  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+609  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+612  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+613  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+615  [main] DEBUG i.g.n.s.i.n.u.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+615  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+625  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+625  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+625  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+627  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Unable to load the library 'io_grpc_netty_shaded_netty_transport_native_epoll_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+629  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 cannot be loaded from java.library.path, now trying export to -Dio.netty.native.workdir: /tmp
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:349)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+	Suppressed: java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+		at java.base/java.lang.System.loadLibrary(System.java:1873)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+		... 13 common frames omitted
+676  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Successfully loaded the library /tmp/libio_grpc_netty_shaded_netty_transport_native_epoll_x86_6416970246916579807799.so
+678  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+678  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+681  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+681  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 4096
+708  [main] DEBUG i.g.n.s.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+760  [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+760  [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+774  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+814  [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.processId: 6085 (auto-detected)
+817  [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.machineId: e4:d5:3d:ff:fe:dd:cb:19 (auto-detected)
+846  [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+846  [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+872  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+872  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+872  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+872  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+872  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+873  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+874  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+883  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+883  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+883  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+585  [main] DEBUG i.g.n.s.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+599  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+599  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - Java version: 11
+602  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+603  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+604  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+607  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+608  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+610  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @491666ad
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:334)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+611  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+611  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+639  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - maxDirectMemory: 1533018112 bytes (maybe)
+640  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+640  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+643  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+643  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+645  [main] DEBUG i.g.n.s.i.n.u.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+645  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+655  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+655  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+656  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+657  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Unable to load the library 'io_grpc_netty_shaded_netty_transport_native_epoll_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+661  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 cannot be loaded from java.library.path, now trying export to -Dio.netty.native.workdir: /tmp
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:349)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+	Suppressed: java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+		at java.base/java.lang.System.loadLibrary(System.java:1873)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+		... 13 common frames omitted
+717  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Successfully loaded the library /tmp/libio_grpc_netty_shaded_netty_transport_native_epoll_x86_6412658517608795069241.so
+720  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+720  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+723  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+725  [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 4096
+759  [main] DEBUG i.g.n.s.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+816  [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+816  [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+846  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+894  [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.processId: 6185 (auto-detected)
+900  [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.machineId: e4:d5:3d:ff:fe:dd:cb:19 (auto-detected)
+915  [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+915  [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+942  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+943  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+944  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+944  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+944  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+944  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+944  [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+953  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+954  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+954  [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+806  [main] DEBUG i.g.n.s.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+821  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+821  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - Java version: 11
+825  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+826  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+827  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+832  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+833  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+836  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @491666ad
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:334)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:214)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:82)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:222)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<init>(AsciiString.java:209)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.cached(AsciiString.java:1406)
+	at io.grpc.netty.shaded.io.netty.util.AsciiString.<clinit>(AsciiString.java:47)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:67)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+836  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+836  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+874  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - maxDirectMemory: 1533018112 bytes (maybe)
+874  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+875  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+878  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+878  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+880  [main] DEBUG i.g.n.s.i.n.u.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+880  [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+925  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+926  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+926  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+934  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Unable to load the library 'io_grpc_netty_shaded_netty_transport_native_epoll_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+937  [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 cannot be loaded from java.library.path, now trying export to -Dio.netty.native.workdir: /tmp
+java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:349)
+	at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:186)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	at io.grpc.netty.shaded.io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.isEpollAvailable(Utils.java:220)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils.<clinit>(Utils.java:92)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder.<clinit>(NettyServerBuilder.java:76)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:39)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyServerProvider.builderForPort(NettyServerProvider.java:24)
+	at io.grpc.ServerBuilder.forPort(ServerBuilder.java:41)
+	at com.bikash.grpcjava.Main.main(Main.java:18)
+	Suppressed: java.lang.UnsatisfiedLinkError: no io_grpc_netty_shaded_netty_transport_native_epoll_x86_64 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+		at java.base/java.lang.System.loadLibrary(System.java:1873)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+		at io.grpc.netty.shaded.io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+		... 13 common frames omitted
+1049 [main] DEBUG i.g.n.s.i.n.u.i.NativeLibraryLoader - Successfully loaded the library /tmp/libio_grpc_netty_shaded_netty_transport_native_epoll_x86_644985341454665508562.so
+1053 [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+1053 [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+1058 [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+1060 [main] DEBUG i.g.n.shaded.io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 4096
+1158 [main] DEBUG i.g.n.s.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+1315 [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+1315 [main] DEBUG i.g.n.s.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+1336 [main] DEBUG i.g.n.s.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+1397 [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.processId: 5371 (auto-detected)
+1404 [main] DEBUG i.g.n.s.i.n.c.DefaultChannelId - -Dio.netty.machineId: e4:d5:3d:ff:fe:dd:cb:19 (auto-detected)
+1420 [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+1420 [main] DEBUG i.g.n.s.i.n.u.ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+1462 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+1462 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+1463 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+1464 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+1464 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+1464 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+1464 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+1464 [main] DEBUG i.g.n.s.i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+1473 [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+1474 [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+1474 [main] DEBUG i.g.n.s.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+1542 [main] INFO  com.bikash.grpcjava.Main - Server started. Listening to 8088
