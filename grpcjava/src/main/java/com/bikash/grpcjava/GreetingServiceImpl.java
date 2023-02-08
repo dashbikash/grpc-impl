@@ -5,7 +5,12 @@ import com.bikash.grpcdemo.service.FileResponse;
 import com.bikash.grpcdemo.service.GreetingServiceGrpc;
 import com.bikash.grpcdemo.service.HelloRequest;
 import com.bikash.grpcdemo.service.HelloResponse;
+import com.google.common.io.Files;
 import io.grpc.stub.StreamObserver;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,7 +20,13 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
 
     @Override
     public void uploadFile(FileRequest request, StreamObserver<FileResponse> responseObserver) {
-        FileResponse resp=FileResponse.newBuilder().setName("myfile"+request.getExt()).build();
+        byte[] data = request.getFile().toByteArray();
+        try {
+            Files.write(data, new File("/tmp/java_grpc_image.jpeg"));
+        } catch (IOException ex) {
+            Logger.getLogger(GreetingServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        FileResponse resp=FileResponse.newBuilder().setName("java_grpc_image.jpeg").setUri("/tmp/java_grpc_image.jpeg").build();
         responseObserver.onNext(resp);
         responseObserver.onCompleted();
     }

@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"log"
 	"net"
+	"os"
 	"time"
 
-	pb "bikash/grpcimpl/greeting"
+	pb "bikash/grpcimpl/proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -19,7 +20,7 @@ func main() {
 	//grpc_server()
 }
 
-func grpc_client() {
+func grpc_hello_client() {
 	conn, err := grpc.Dial("localhost:8088", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalln(err)
@@ -29,6 +30,25 @@ func grpc_client() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 	resp, err := c.SayHello(ctx, &pb.HelloRequest{Name: "Bikash@Go"})
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fmt.Println(resp.GetGreeting())
+}
+func grpc_file_client() {
+	conn, err := grpc.Dial("localhost:8088", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer conn.Connect()
+	c := pb.NewGreetingServiceClient(conn)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	defer cancel()
+	f, err := os.Open("../files/image.jpeg")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	resp, err := c.UploadFile(ctx, &pb.FileRequest{File: f, Ext: "jpeg", Size: 0})
 	if err != nil {
 		log.Fatalln(err)
 	}

@@ -6,8 +6,6 @@ option java_multiple_files = true;
 option java_package = " com.bikash.grpcdemo.service";
 option java_outer_classname = "GreetingProto";
 
-
-
 message HelloRequest {
   string name = 1;
   repeated string hobbies = 2;
@@ -16,7 +14,18 @@ message HelloRequest {
 message HelloResponse {
   string greeting = 1;
 }
+message FileRequest{
+  bytes file=1;
+  int32 size=2;
+  string ext=3;
+}
+
+message FileResponse{
+  string name=1;
+  string uri=2;
+}
 
 service GreetingService {
   rpc SayHello(HelloRequest) returns (HelloResponse);
+  rpc UploadFile(FileRequest) returns (FileResponse);
 }

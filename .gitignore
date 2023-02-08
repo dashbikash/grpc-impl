@@ -1,1 +1,2 @@
-/grpcjava/target/
+target/
+logs/

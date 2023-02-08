@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eGreeting.proto\x12\x08greeting\"-\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07hobbies\x18\x02 \x03(\t\"!\n\rHelloResponse\x12\x10\n\x08greeting\x18\x01 \x01(\t2N\n\x0fGreetingService\x12;\n\x08SayHello\x12\x16.greeting.HelloRequest\x1a\x17.greeting.HelloResponseBI\n\x1c com.bikash.grpcdemo.serviceB\rGreetingProtoP\x01Z\x18\x62ikash/grpcimpl/greetingb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eGreeting.proto\x12\x08greeting\"-\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07hobbies\x18\x02 \x03(\t\"!\n\rHelloResponse\x12\x10\n\x08greeting\x18\x01 \x01(\t\"6\n\x0b\x46ileRequest\x12\x0c\n\x04\x66ile\x18\x01 \x01(\x0c\x12\x0c\n\x04size\x18\x02 \x01(\x05\x12\x0b\n\x03\x65xt\x18\x03 \x01(\t\")\n\x0c\x46ileResponse\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03uri\x18\x02 \x01(\t2\x8b\x01\n\x0fGreetingService\x12;\n\x08SayHello\x12\x16.greeting.HelloRequest\x1a\x17.greeting.HelloResponse\x12;\n\nUploadFile\x12\x15.greeting.FileRequest\x1a\x16.greeting.FileResponseBI\n\x1c com.bikash.grpcdemo.serviceB\rGreetingProtoP\x01Z\x18\x62ikash/grpcimpl/greetingb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'Greeting_pb2', globals())
@@ -25,6 +25,10 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _HELLOREQUEST._serialized_end=73
   _HELLORESPONSE._serialized_start=75
   _HELLORESPONSE._serialized_end=108
-  _GREETINGSERVICE._serialized_start=110
-  _GREETINGSERVICE._serialized_end=188
+  _FILEREQUEST._serialized_start=110
+  _FILEREQUEST._serialized_end=164
+  _FILERESPONSE._serialized_start=166
+  _FILERESPONSE._serialized_end=207
+  _GREETINGSERVICE._serialized_start=210
+  _GREETINGSERVICE._serialized_end=349
 # @@protoc_insertion_point(module_scope)
