@@ -16,7 +16,7 @@ import (
 
 func main() {
 	fmt.Println("Hello GRPC GO")
-	grpc_client()
+	grpc_hello_client()
 	//grpc_server()
 }
 
@@ -48,11 +48,17 @@ func grpc_file_client() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	resp, err := c.UploadFile(ctx, &pb.FileRequest{File: f, Ext: "jpeg", Size: 0})
+	fi, err := f.Stat()
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(resp.GetGreeting())
+	fbyte := make([]byte, fi.Size())
+	f.Read(fbyte)
+	resp, err := c.UploadFile(ctx, &pb.FileRequest{File: fbyte, Ext: "jpeg", Size: 0})
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fmt.Println(resp.GetName())
 }
 
 // Server Implimentation

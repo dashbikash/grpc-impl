@@ -9,7 +9,6 @@ import com.bikash.grpcdemo.service.FileResponse;
 import com.bikash.grpcdemo.service.GreetingServiceGrpc;
 import com.bikash.grpcdemo.service.HelloRequest;
 import com.bikash.grpcdemo.service.HelloResponse;
-import com.bikash.grpcjava.GrpcAuthImpl.Constants;
 import com.google.common.io.Files;
 import com.google.protobuf.ByteString;
 import io.grpc.ManagedChannel;
@@ -36,11 +35,10 @@ public class GrpcBasicImpl {
 
     public static class ClientImpl {
 
-        private static int port = 8089;
+        private static int port = 8088;
 
         public static void sayHello() throws Exception {
-            String clientId = Constants.CLIENT_ID_CONTEXT_KEY.get();
-            
+             
             ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", port).usePlaintext().build();
             GreetingServiceGrpc.GreetingServiceFutureStub stub = GreetingServiceGrpc.newFutureStub(channel);
             HelloRequest req = HelloRequest.newBuilder().setName("Bikash").build();
